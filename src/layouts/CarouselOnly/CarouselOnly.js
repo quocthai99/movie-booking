@@ -1,18 +1,20 @@
-import Carousel from "../components/Carousel";
-import Footer from "../components/Footer";
+import React from "react";
+
 import Header from "../components/Header";
+import Footer from "../components/Footer";
+import CarouselHeader from "../components/CarouselHeader";
 
-function HeaderOnly({ children }) {
-    return (
-        <div>
-            <Header />
-            <Carousel />
-            <div className="container">
-                <div className="content">{children}</div>
-            </div>
-            <Footer />
-        </div>
-    );
-}
+const CarouselOnly = ({ children }) => {
+  return (
+    <div>
+      <Header />
+      <CarouselHeader />
+      <div>
+        <div>{children}</div>
+      </div>
+      <Footer />
+    </div>
+  );
+};
 
-export default HeaderOnly;
+export default CarouselOnly;
