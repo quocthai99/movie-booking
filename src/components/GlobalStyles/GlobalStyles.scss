@@ -1,33 +1,44 @@
-@import 'normalize.css';
+@import "normalize.css";
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
 
 :root {
-    --primary: #fe2c55;
-    --black: #000;
-    --white: #fff;
-    --text-color: #161823;
+  --primary: #fe2c55;
+  --black: #000;
+  --white: #fff;
+  --text-color: #161823;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.6rem;
-    line-height: 1.5;
-    text-rendering: optimizespeed;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-rendering: optimizespeed;
 }
 
-
 a {
-    color: var(--white);
-    text-decoration: none;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.slick-dots-bottom {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.slick-slide > div {
+  margin: 0 5px;
+}
+.slick-list {
+  margin: 0 -5px;
 }

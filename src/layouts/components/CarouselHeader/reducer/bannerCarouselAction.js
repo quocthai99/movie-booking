@@ -3,7 +3,7 @@ import carouselService from '../../../../services/carouselService'
 export const fetchBanner = () => {
     return dispatch => {
 
-        carouselService.get("QuanLyPhim/LayDanhSachBanner")
+        carouselService.get()
             .then(result => {
                 dispatch({
                     type: "LIST_BANNER",

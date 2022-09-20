@@ -13,7 +13,6 @@ const cx = classNames.bind(styles)
 const contentStyle = {
   height: "100vh",
   color: "#fff",
-  lineHeight: "160px",
   textAlign: "center",
   background: "#364d79",
 };
@@ -32,7 +31,7 @@ const CarouselHeader = () => {
   const renderBanner = () => {
     return listBanner.map((banner, index) => {
       return (
-        <div key={index}>
+        <div className={cx('banner')} key={index}>
           <img className={cx('images-banner')} src={banner.hinhAnh} alt='' style={contentStyle} />
         </div>
       )

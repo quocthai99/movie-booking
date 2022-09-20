@@ -27,7 +27,6 @@ const navList = [
 ];
 
 const Header = () => {
-  console.log(images);
   return (
     <div className={cx("wrapper")}>
       <div className={cx("inner")}>
