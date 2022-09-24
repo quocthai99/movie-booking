@@ -41,8 +41,9 @@
 }
 
 .card-top h1 {
-  font-size: 0.9rem;
+  font-size: 1.5rem;
   margin: 20px;
+  color: var(--primary);
 }
 
 .card-top > img {
@@ -56,4 +57,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+// detail
+.detail-pri {
+  &:hover {
+    color: #fff;
+  }
+}
+
+.detail-out {
+  &:hover {
+    color: var(--primary);
+    border-color: currentColor;
+    background-color: rgb(247, 243, 244);
+  }
 }

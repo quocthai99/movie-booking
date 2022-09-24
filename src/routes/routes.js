@@ -10,7 +10,7 @@ const publicRoutes = [
   { path: "/", component: Home, layout: CarouselOnly },
   { path: "/contact", component: Contact },
   { path: "/about", component: About },
-  { path: "/detail", component: Detail, layout: HeaderOnly },
+  { path: "/detail/:id", component: Detail, layout: HeaderOnly },
 ];
 
 export { publicRoutes };
