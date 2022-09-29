@@ -1,0 +1,43 @@
+.content-tabs {
+  border: 1px solid pink;
+}
+
+.logo-system {
+  width: 50px;
+  height: 50px;
+}
+
+.system-address {
+    display: flex;
+    align-items: center;
+    
+    img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+    }
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.calendarFilm {
+  padding: 10px;
+}
+
+.calendar-top {
+  display: flex;
+  margin-bottom: 10px;
+  img {
+    width: 50px;
+    height: 50px;
+  }
+  h4 {
+    margin-left: 10px;
+    color: var(--primary);
+  }
+}

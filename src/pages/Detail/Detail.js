@@ -55,19 +55,19 @@ const Detail = () => {
             <div className={cx('list')}>
               <div className={cx('cast')}>
                 <img src='https://i.pinimg.com/originals/70/b0/13/70b01337bfe05ff4e98913c329fa14cc.jpg' alt='cast-1' />
-                <label>Nguyen Quoc Thai</label>
+                <label>{data.biDanh}</label>
               </div>
               <div className={cx('cast')}>
                 <img src='https://i.pinimg.com/originals/70/b0/13/70b01337bfe05ff4e98913c329fa14cc.jpg' alt='cast-1' />
-                <label>Nguyen Quoc Thai</label>
+                <label>{data.biDanh}</label>
               </div>
               <div className={cx('cast')}>
                 <img src='https://i.pinimg.com/originals/70/b0/13/70b01337bfe05ff4e98913c329fa14cc.jpg' alt='cast-1' />
-                <label>Nguyen Quoc Thai</label>
+                <label>{data.biDanh}</label>
               </div>
               <div className={cx('cast')}>
                 <img src='https://i.pinimg.com/originals/70/b0/13/70b01337bfe05ff4e98913c329fa14cc.jpg' alt='cast-1' />
-                <label>Nguyen Quoc Thai</label>
+                <label>{data.biDanh}</label>
               </div>
             </div>
 

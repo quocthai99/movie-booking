@@ -2,6 +2,8 @@
     padding: 50px;
     min-height: 100vh;
     background-color: #333;
+    background-image: url('https://cdn.vectorstock.com/i/1000x1000/15/31/low-polygon-shapes-black-light-background-dark-vector-21691531.webp');
+    background-size: cover;
 }
 
 .inner {
@@ -9,7 +11,7 @@
     display: grid;
     grid-template-columns: 480px 1fr;
     grid-gap: 32px;
-    backdrop-filter: blur(12px) constrast(80%) ;
+    backdrop-filter: blur(5px);
     color: white;
 }
 

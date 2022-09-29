@@ -43,13 +43,21 @@ a {
   margin: 0 -5px;
 }
 
+.ant-tabs-ink-bar {
+  background: var(--primary);
+}
+
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: var(--primary);
+}
+
 button,
 input,
 [tabindex] {
-    outline: none;
-    border: none;
+  outline: none;
+  border: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }

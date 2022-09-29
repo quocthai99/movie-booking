@@ -4,11 +4,13 @@ import { useDispatch, useSelector } from "react-redux";
 import Slider from "react-slick";
 
 import { fetchFilms } from "./reducer/getFilmsAction";
+import { fetchSystem } from "./reducer/getFilmsAction";
+
+import Button from "../../components/Button";
+import CinemaSystem from "./CinemaSystem/CinemaSystem";
 
 import classNames from "classnames/bind";
 import styles from "./Home.module.scss";
-
-import Button from "../../components/Button";
 
 const cx = classNames.bind(styles);
 
@@ -46,7 +48,9 @@ function SamplePrevArrow(props) {
 
 const Home = () => {
   const dispatch = useDispatch();
-  const { listFilms } = useSelector((state) => state.listFilmsReducer);
+  const { listFilms, listSystems } = useSelector(
+    (state) => state.listFilmsReducer
+  );
 
   const settings = {
     className: "center",
@@ -65,6 +69,10 @@ const Home = () => {
     dispatch(fetchFilms());
   }, [dispatch]);
 
+  useEffect(() => {
+    dispatch(fetchSystem());
+  }, [dispatch]);
+
   const renderListFilms = () => {
     return listFilms.map((film, index) => {
       return (
@@ -74,11 +82,21 @@ const Home = () => {
             <h1>{film.tenPhim}</h1>
           </div>
           <div className={cx("card-bottom")}>
-            <Button primary small className={cx("detail-pri")} to={`/detail/${film.maPhim}`}>
+            <Button
+              primary
+              small
+              className={cx("detail-pri")}
+              to={`/detail/${film.maPhim}`}
+            >
               Mua vé
             </Button>
-            <Button outline small className={cx("detail-out")} to={`/detail/${film.maPhim}`}>
-                Chi tiết
+            <Button
+              outline
+              small
+              className={cx("detail-out")}
+              to={`/detail/${film.maPhim}`}
+            >
+              Chi tiết
             </Button>
           </div>
         </div>
@@ -118,7 +136,9 @@ const Home = () => {
             <Slider {...settings}>{renderListFilms()}</Slider>
           </div>
         </div>
-        <div className={cx("content-bottom")}></div>
+        <div className={cx("content-bottom")}>
+          <CinemaSystem listSystems={listSystems} />
+        </div>
       </div>
     </div>
   );

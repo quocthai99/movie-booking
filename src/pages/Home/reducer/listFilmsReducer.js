@@ -2,7 +2,8 @@ const initialState = {
     listFilms: [],
     nowShowing: true,
     commingSoon: true,
-    filmDefault: []
+    filmDefault: [],
+    listSystems: []
 }
 
 const listFilmsReducer = (state = initialState, action) => {
@@ -19,6 +20,12 @@ const listFilmsReducer = (state = initialState, action) => {
         }
         case "COMMING_SOON": {
             state.listFilms = state.filmDefault.filter(film => film.sapChieu === state.commingSoon)
+
+            return {...state}
+        }
+
+        case "LIST_SYSTEM": {
+            state.listSystems = action.payload
 
             return {...state}
         }
